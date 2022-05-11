@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding:0px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, red , blue);
+    position: fixed;
+    top:0px;
+    width: 100%;
+    padding-left: 37%;
+    
+  }
+  
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    
+  }
+  
+
+  li a:hover {
+    background-color: rgb(18, 19, 18); 
+  }
+
+
+.home {  background-color: rgb(18, 19, 18);}
+
+.background1 {
+  background-image: url(backG.png);
+  
+}
+ 
+
+.imageContainer {
+ float: left;
+ padding: 10px;
+ 
+}
+
+
+.clearfix {
+  overflow: auto;
+  margin-left: 5px;
+}
+
+
+.parent {
+  
+  padding: 4px;
+  display: flex;
+
+}
+
+
+.txtArea {
+  
+  
+  padding: 12px 20px;
+  border: 3px solid grey;
+  width: 33.33%;
+  height: 400px;
+  text-align: left;
+  margin: 1%;
+  background-color: white;
+  resize: none;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f8f8f8;
+  
+  
+}
+
+
+
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white; 
+  }
+
+
+  
+ 
+
+  td,tr, th {
+    text-align: left;
+    padding: 8px;
+    border: 2px solid #dddd;
+  }
+  
+
+    th {
+    padding: 20px;
+    background-color: aqua;    
+  }
+  
+
+  tr:nth-child(even) {background-color: #c2bebe;}
+
+  tr:hover {
+    background-color: rgb(182, 111, 19);
+  }
+
+
+   .footer  {
+   height:150px ;
+   position: static;
+   background-image: linear-gradient(to right, red , blue);
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+   padding: 10px;
+ }
+
+ 
+
+
+ 
+ 
+ 
+ 
+
+ 

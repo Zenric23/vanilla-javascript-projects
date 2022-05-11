@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.navbar h1{
+  color: rgb(243, 125, 56)
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar .links a{
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+
+.navbar .links a:hover{
+  color: brown;
+}
+
+.content{
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 1.2rem;
+}
+
+/* Blog previews */
+
+.blog-preview{
+  line-height: 2;
+  font-size: 15px;
+  margin-left: 1rem;
+  padding: 5px;
+}
+
+.blog-preview:hover{
+  border-bottom: 1px solid orange;
+}
+
+.blog-preview h2{
+  color: rgb(243, 125, 56)
+}
+
+.blog-list{
+  margin-bottom: 10px;
+}
+
+/* Blog details */
+
+.blog-details h2,
+.blog-details p
+{
+  margin-bottom:1rem;
+}
+
+.blog-details h2{
+  color: rgb(243, 125, 56);
+  font-size: 1.3rem;
+}
+
+/* create new blog form */
+
+.create {
+  max-width: 400px;
+  margin:0 auto;
+  text-align: center;
+}
+.create label {
+  display: block;
+  text-align: left;
+}
+.create h2 {
+  font-size: 20px;
+  color: rgb(243, 125, 56);
+  margin-bottom: 30px;
+}
+
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button {
+  background: rgb(243, 125, 56);
+  color: white;
+  border: 0;
+  padding: 8px;
+  border-radius:8px;
+  cursor: pointer;
+}

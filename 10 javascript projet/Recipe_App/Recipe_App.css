@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+.addBtn{
+    border-radius: 10px;
+    width: auto;
+    padding: 10px;
+}
+hr{
+    height: 3px !important;
+ 
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li{
+    font-size: 1rem;
+    color: black;
+}
+
+.btnDelete{
+    width: 60%;
+}
+
+
+
+

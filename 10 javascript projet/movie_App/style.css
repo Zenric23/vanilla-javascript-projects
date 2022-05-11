@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+:root{
+    --primary-color:rgb(36, 5, 56);
+    --secondary-color:rgb(61, 5, 129);
+}
+body{
+    background: var(--secondary-color);
+}
+
+header{
+    padding: 1rem 2rem;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header h1{
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: 800;
+    
+}
+
+header input{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    outline: none;
+    border:none
+}
+
+header input:focus{
+    outline: none;
+}
+
+nav{
+    background: var(--primary-color);
+    padding:1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    padding: 1rem;
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+
+main{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    color: white;
+}
+
+.movie{
+    flex-basis: 23.9%;
+    margin: 0.5rem;
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.movie img{
+    width:100%;
+    height: 350px;
+    cursor: pointer;
+}
+
+.movieInfo{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.4rem;
+}
+
+.green{
+    padding: 5px;
+    margin-left: 1rem;
+    background: var(--primary-color);
+    color: greenyellow;
+    border-radius: 5px;
+}
+
+.red{
+    padding: 5px;
+    margin-left: 1rem;
+    background: var(--primary-color);
+    color: red;
+    border-radius: 5px;
+}
+
+.orange{
+    padding: 5px;
+    margin-left: 1rem;
+    background: var(--primary-color);
+    color: orange;
+    border-radius: 5px;
+}
+
+.color{
+color: orange;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    background: var(--secondary-color);
+    color: rgb(255, 255, 255);
+}
+
+
+.modalCon{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.modal{
+    position: absolute;
+    background: transparent;
+    height: auto;
+    color: white;
+    width: 80%;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.2s;
+}
+
+.modal img{
+   width: 50%;
+   height: 500px;
+   cursor: pointer;
+}
+
+.modal .imagePart{
+   display: flex;
+   justify-content: center;
+}
+
+.modal .desc{
+    position: absolute;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+
+.modalCon.active{
+    visibility: visible;
+    opacity: 1;
+}
+

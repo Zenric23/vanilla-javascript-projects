@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+   
+ }
+
+ body{
+    font-family: sans-serif; 
+   
+     background-image: url('pic/myBackg.png');
+     background-position: center;
+     background-size: 500px;
+     
+     
+     
+ }
+
+ hr{
+     margin: 0 50px;
+     border: 1px solid brown; 
+ }
+
+ i{margin-right: 5px;}
+
+ .logo{ 
+     color: white;
+    position: absolute;
+    left: 16px;
+    bottom: 28px;
+    
+}
+.logo span{
+   color: orange;
+}
+
+ 
+
+ .nav{
+     float: left;
+     width: 100%;
+     padding: 4px 80px;
+     overflow: hidden;
+     background-color:rgb(29, 28, 28);
+     padding-left: 10%;
+     position:fixed;
+     z-index: 1;
+ }
+ 
+ .nav a{
+     
+     float: left;
+     display: block;
+     text-decoration: none;
+     font-size: 25px;
+     color: white;
+     padding: 24px 16px;
+     border-radius: 4px;
+ }
+
+ 
+ 
+ 
+
+ .nav a:hover{
+     
+    background-color:darkorange;
+     transition:  0.3s ease ;
+
+ }
+
+ .parent-container{
+     
+     width: 75%;
+     height:auto;
+     overflow: hidden;
+
+    margin-left: 13%;
+    
+     background-color: wheat;
+ }
+
+ 
+
+ .bg .button1{
+     text-align: center;
+    position: relative;
+    left: 900px;
+    bottom: 60px;
+    height: auto;
+    width: 20%;
+     padding: 14px 32px;
+     color: white;
+     font-weight: bold;
+     font-size: 30px;
+     background-color:orange;
+     border-radius: 20px;
+     border: 2px solid white;
+     
+ }
+
+ .button1:hover{
+    background-color:darkorange;
+    cursor: pointer;
+ }
+
+
+ .container{
+
+    float: left;
+    width: 50%;
+    padding: 5px;
+    overflow: hidden;
+    
+ }
+
+ 
+
+ .container .desc{
+    
+     color: white;
+     font-weight: bold;
+     font-size: 30px;
+     background-color:rgb(29, 28, 28);
+     padding: 10px;
+     margin-bottom: 5px;
+     text-align: center;
+     border-radius: 20px;
+ }
+
+ .container a{
+     text-decoration: none;
+ }
+
+ .container .button2{
+     color: white;
+     font-weight: bold;
+     background-color:orange;
+     padding:10px;
+     border-radius: 20px;
+     border: 2px solid white;
+     width: 25%;
+     text-align: center;
+     position: relative;
+     bottom: 70px;
+     margin-left: 10px;
+ }
+
+ .container .button2:hover{
+     cursor: pointer;
+     background-color:darkorange ;
+ }
+
+
+ 
+
+ .column2{
+     
+    float: right;
+     width: 25.8%;
+     height: auto;
+     margin-left:17px;
+     background-color: transparent;
+     padding: 10px 20px;
+     border-radius: 20px  
+ }
+ .column2 .fakeimg{
+     width: 100%;
+     background-color: rgb(75, 75, 74);
+     padding:20px;
+     margin-top: 4px;
+     height: 100px ;
+     cursor: pointer;
+     
+
+ }
+
+ .fakeimg:hover{
+    transform: scale(1.05, 1.1);
+    transition: all 0.4s ease;
+
+ }
+
+.col{
+   margin-top: 4px;
+   
+}
+ .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+ 
+
+
+ 
+
+
+
+  

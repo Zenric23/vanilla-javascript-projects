@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="cart.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+<div class="nav">
+  <ul>
+    <li><a>Home</a></li>
+    <li><a>About</a></li>
+    <li><a>Menu</a></li>
+    <li><a>Contact</a></li>
+  </ul>
+  <span onclick="openModal()"><i class='bx bxs-cart'></i></span>
+</div>
+
+    
+
+    
+    <div class="container">
+      <div class="card">
+        <img src="/pic/cof3.jpg" class="image" alt="" />
+        <div class="header">
+        <h4 class="title">Coffee 1</h4>
+        <p class="price">10</p>
+        </div>
+        <button class="btn" id="1">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="/pic/cof4.jpg" class="image" alt="" />
+        <div class="header">
+        <h4 class="title">Coffee 2</h4>
+        <p class="price">20</p>
+        </div>
+        <button class="btn" id="2">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="/pic/cof5.jpg" class="image" alt="" />
+        <div class="header">
+        <h4 class="title">Coffee 3</h4>
+        <p class="price">30</p>
+        </div>
+        <button class="btn" id="3">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="/pic/cof6.jpg" class="image" alt="" />
+        <div class="header">
+        <h4 class="title">Coffee 4</h4>
+        <p class="price">40</p>
+        </div>
+        <button class="btn" id="4">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="/pic/cof7.jpg" class="image" alt="" />
+        <div class="header">
+        <h4 class="title">Coffee 5</h4>
+        <p class="price">50</p>
+        </div>
+        <button class="btn" id="5">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="/pic/cof8.jpg" class="image" alt="" />
+        <div class="header">
+        <h4 class="title">Coffee 6</h4>
+        <p class="price">60</p>
+        </div>
+        <button class="btn" id="6">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="/pic/cof9.png" class="image" alt="" />
+        <div class="header">
+        <h4 class="title">Coffee 7</h4>
+        <p class="price">70</p>
+        </div>
+        <button class="btn" id="7">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="/pic/coffe2.jpg" class="image" alt="" />
+        <div class="header">
+        <h4 class="title">Coffee 8</h4>
+        <p class="price">100</p>
+        </div>
+        <button class="btn" id="8">Add to Cart</button>
+      </div>
+    </div>
+    
+
+    <div class="modal">
+     <div class="output">
+         <h1 style="text-align: center;">My Cart</h1>
+         <span class="close" onclick="closeModal()"><i class='bx bx-window-close' ></i></span>
+         <div  class="cartItems"></div>
+      <div class="totalSec">
+        <hr style="margin:15px 0; border: 1px solid black;">
+        <h4 class="total">Total: 0</h4>
+      </div>
+      <button class="purchase">purchase</button>
+       </div>
+      </div>
+    
+        </div>
+     </div>
+    </div>
+
+   
+
+<script src="cart.js"></script>
+  </body>
+</html>

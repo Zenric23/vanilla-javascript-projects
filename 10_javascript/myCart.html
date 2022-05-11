@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="myCart.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <span class="icon col-md" onclick="toggle()"><i class='bx bx-menu'></i></span>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/coffee1.jpeg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 1</p>
+              <p>$<span class="price">20</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof5.jpg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 2</p>
+              <p>$<span class="price">40</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof4.jpg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 3</p>
+              <p>$<span class="price">100</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof3.jpg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 4</p>
+              <p>$<span class="price">200</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof4.jpg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 5</p>
+              <p>$<span class="price">400</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="/pic/best seller.jpg"
+              class="card-img-top image"
+              alt="..."
+            />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 6</p>
+              <p>$<span class="price">600</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof6.jpg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 7</p>
+              <p>$<span class="price">800</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof7.jpg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 8</p>
+              <p>$<span class="price">360</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof8.jpg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 9</p>
+              <p>$<span class="price">187</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof9.png" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 10</p>
+              <p>$<span class="price">654</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/cof9.png" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 11</p>
+              <p>$<span class="price">321</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="/pic/expresso.jpg" class="card-img-top image" alt="..." />
+            <div class="card-body d-flex justify-content-between">
+              <p class="name">Coffee 12</p>
+              <p>$<span class="price">1000</span></p>
+            </div>
+            <button type="button" class="btn">ADD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="myModal">
+        <div class="modal-container">
+            <h2 class="text-center">Cart</h2>
+            <div class="item-header d-flex justify-content-between mt-4">
+                <h5>Item</h5>
+                <h5>Quantity</h5>
+                <h5>Price</h5>
+            </div>
+            <div class="items"><!-- render item here --></div>
+            <div class="totalEl">
+              <h5 class=" py-5 total">Total: 0</h5> 
+            </div> 
+              <button class="purchase">PURCHASE</button> 
+        </div>
+      </div>
+
+    <script src="myCart.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

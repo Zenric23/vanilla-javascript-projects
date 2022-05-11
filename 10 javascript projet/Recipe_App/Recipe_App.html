@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <title>My Recipe App</title>
+    <link rel="stylesheet" href="Recipe_App.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.1/purify.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md text-center mt-5">
+        <h1 class="text-primary">Coffee Brew Recipes</h1>
+        <p>Add custome recipes for your brews below.</p>
+    </div>
+        <div class="col-md mt-5">
+            <div class="col-md-9 border m-auto border-primary p-4">
+                <form id="recipe-form">
+                <div class="row">
+               <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name of Brew</label>
+                    <input type="text" class="form-control" id="name" placeholder="e.g., Morning Brew">
+                  </div>
+               </div>
+               <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="method" class="form-label">Brew Method</label>
+                    <input type="text" class="form-control" id="method" placeholder="e.g., v60 Pour Over">
+                  </div>
+               </div>
+               <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="roast" class="form-label">Roast</label>
+                    <input type="text" class="form-control" id="roast" placeholder="e.g., Full City">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                 <div class="mb-3">
+                     <label for="size" class="form-label">Grind Size</label>
+                     <input type="text" class="form-control" id="size" placeholder="e.g., 30">
+                   </div>
+                </div>
+                <div class="col-md-4">
+                 <div class="mb-3">
+                     <label for="ratio" class="form-label">Ratio</label>
+                     <input type="text" class="form-control" id="ratio" placeholder="e.g., 1:16">
+                   </div>
+                </div>
+                <div class="col-md-4">
+                 <div class="mb-3">
+                     <label for="notes" class="form-label">Notes (Optional)</label>
+                     <input type="text" class="form-control" id="notes" >
+                   </div>
+                </div>
+             </div>
+             <button type="submit" class="bg-primary border text-white addBtn">Add Recipe</button>
+            </form>
+            </div>
+            </div>
+    
+
+    <div class="container">
+        <div class="row m-4 border-bottom border-3 border-primary">
+        <p class="h3 text-primary">Saved Recipe</p>
+        </div>
+    <div class="row row-cols-1 row-cols-md-3 mx-4 my-6 text-center" id="recipe-container"></div>
+
+    </div>
+
+</div>
+
+
+    
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Recipe _App.js"></script>
+  </body>
+</html>

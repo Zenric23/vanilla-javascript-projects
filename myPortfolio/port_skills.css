@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background:linear-gradient(to right,black,rgb(56, 55, 55));
+    color: white;
+}
+
+nav{
+    background:rgb(36, 11, 11);
+}
+
+.nav-link{
+    color: white;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+.nav-link:visited{
+    color: white;
+}
+.nav-link:hover{
+    color: brown;
+    transition: 0.5s;
+   
+}
+
+.nav-item{
+    margin-left: 80px;
+
+}
+
+.navbar-nav{
+    margin-left: 140px;
+}
+
+img{
+    height: auto;
+}
+
+.kill{
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+.kill:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s;
+    cursor: pointer;
+    
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+
+}
+
+.js{
+    background: rgb(185, 185, 37);
+}
+.php{
+    background: rgb(39, 13, 187);
+}
+
+.boots{
+    background: rgb(62, 5, 95);
+}
+.sql{
+    background:rgb(114, 38, 10)
+}
+
+a .tae{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding-right: 6px;
+}
+a .tae:hover{
+    color: grey;
+}
+

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+.container{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.container img{
+    height: 200px;
+}
+.container .btn{
+    background: black;
+    color: white;
+    transition: none;
+    box-shadow: none;
+    font-weight: 500;
+}
+.container .btn:active{
+    background: white;
+    color: black;
+    outline: none;
+}   
+.icon{
+    position: fixed;
+    font-size:50px;
+    right: 15px;
+    z-index:1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.myModal{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background:rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+.modal-container{
+    position: absolute;
+    top: 40px;
+    width: 30%;
+    background: white;
+    padding: 15px;
+    overflow: auto;
+    height: 590px;
+    border-radius: 10px;
+    opacity:0;
+    transition: 0.5s ease;
+}
+.myModal .item-header{
+    position: relative;
+}
+.myModal .item-header h5::after{
+    content: "";
+    height: 2px;
+    background: black;
+    width: 100%;
+    display: inline-flex;
+}
+.myModal .item-name{
+    width: 25%;
+}
+.myModal .quantity{
+    width: 60%;
+    height: 30px;
+}
+.myModal .input{
+
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 83px;
+    margin-left: 40px;
+}
+.myModal .item{
+    position: relative;
+}
+.myModal .item::after{
+    content: "";
+    height: 2px;
+    background: black;
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+.myModal .priceCon{
+   position: absolute;
+   right: 10px;
+  top: 20%;
+}
+.myModal .remove{
+    background: white;
+    border:1px solid red;
+    color: red;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+}
+.myModal .remove:hover{
+    color: white;
+    background: red;
+}
+.myModal.active{
+    visibility: visible;
+    opacity: 1;
+}
+.icon.active{
+    color: white;
+}
+.active .modal-container{
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+.totalEl{
+    display: flex;
+    justify-content: end;
+}
+.purchase{
+   
+    width: 100%;
+    margin-bottom: 10px;
+    left: 50%;
+    padding: 6px 0;
+    font-size: 20px;
+    color: green;
+    background: white;
+    border:2px solid green;
+    padding-bottom: 10px;
+}
+.purchase:hover{
+    background: green;
+    color: white;
+}
+
+

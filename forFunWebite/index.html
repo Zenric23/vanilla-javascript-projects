@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+  />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <i class="fas fa-bars"></i>
+      <h1>LOGO</h1>
+      <ul>
+        <li><a href="">Support</a></li>
+        <li class="about">
+          <a href="">About</a>
+          <div class="sub-menu">
+           <ul>
+             <li><a href="">Profile</a></li>
+             <li><a href="">Work</a></li>
+             <li><a href="">Address</a></li>
+           </ul>
+          </div>
+        </li>
+        <li><a href="">Contact</a></li>
+        <li class="line"><a href="">|</a></li>
+        <li><a href="">Sign Up</a></li>
+        <li><a href="">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div>
+        <h1 id="bg-text">Unexpensive is everything</h1>
+      </div>
+      <button>GO TO PROMO</button>
+    </section>
+
+    <section class="sale">
+      <h1>BEST SELLER</h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/img1.jpg" alt="" />
+          <div class="desc">
+            <h4 class="title">Predadot ANT</h4>
+            <p>$66,000</p>
+            <p class="promo">-15%</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/img3.jpg" alt="" />
+          <div class="desc">
+            <h4 class="title">Predadot JSX</h4>
+            <p>$24,000</p>
+            <p class="promo">-10%</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/img5.jpg" alt="" />
+          <div class="desc">
+            <h4 class="title">Predadot ASX</h4>
+            <p>$36,000</p>
+            <p class="promo">-12%</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/img2.jpg" alt="" />
+          <div class="desc">
+            <h4 class="title">Predadot AWP</h4>
+            <p>$16,500</p>
+            <p class="promo">-5%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile">
+      <h1>PROFILE</h1>
+      <div class="profile-container">
+        <div class="profile-box">
+          <div class="image">
+            <p>MEAVE</p>
+          </div>
+          <div class="desc">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              in corrupti laboriosam qui. Reprehenderit suscipit animi, veniam
+              officia!
+            </p>
+          </div>
+        </div>
+        <div class="profile-box">
+          <div class="image">
+            <p>ZENRIC</p>
+          </div>
+          <div class="desc">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              in corrupti laboriosam qui. Reprehenderit suscipit animi, veniam
+              officia!
+            </p>
+          </div>
+        </div>
+        <div class="profile-box">
+          <div class="image">
+            <p>RUBY</p>
+          </div>
+          <div class="desc">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              in corrupti laboriosam qui. Reprehenderit suscipit animi, veniam
+              officia!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="text1">
+          <h1>LOGO</h1>
+          <div class="line1">
+            <ul>
+              <li><a class="line-title" href="">COMPANY</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Jobs</a></li>
+              <li><a href="">For reservation</a></li>
+            </ul>
+          </div>
+          <div class="line2">
+            <ul>
+              <li><a class="line-title" href="">COMMUNITIES</a></li>
+              <li><a href="">For Artist</a></li>
+              <li><a href="">Developers</a></li>
+              <li><a href="">Advertising</a></li>
+              <li><a href="">Investors</a></li>
+              <li><a href="">Vendors</a></li>
+            </ul>
+          </div>
+          <div class="line3">
+            <ul>
+              <li><a class="line-title" href="">USEFUL LINKS</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Web Player</a></li>
+              <li><a href="">Free Mobile App</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="links">
+          <span><a href=""><i class='bx bxl-facebook'></i></a></span>
+          <span><a href=""><i class='bx bxl-twitter'></i></a></span>
+          <span><a href=""><i class='bx bxl-instagram' ></i></a></span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Legal Privancy Center Privancy Policy Cookies About Ads</p>
+
+        <p>2021 | developed by Zenric - Just For Fun, All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+    const hamburger = document.querySelector('.fa-bars');
+    let index = 0;
+
+    function autoType(){
+    const textEl = document.querySelector('#bg-text');
+    const text = 'Unexpensive is everything'
+    let result =  text.slice(0, index)
+    index ++
+    textEl.innerText = result
+    if(index > text.length){
+        index = 0
+    }
+    }
+
+    hamburger.addEventListener('click', (e)=>{
+      const ul = document.querySelector('nav ul');
+      const nav = document.querySelector('nav')
+      ul.classList.toggle('active')
+      nav.classList.toggle('active')
+      a.classList.toggle('active')
+    })
+
+
+   setInterval(autoType,200) 
+    </script>
+  </body>
+</html>

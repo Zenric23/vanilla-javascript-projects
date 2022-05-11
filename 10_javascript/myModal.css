@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: indianred;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  
+    color: white;
+}
+.content{
+    width: 40%;
+    font-size: 1rem;
+}
+p{
+    margin-bottom: 1rem;
+}
+a{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.container.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+ .modal{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+    transition: 0.5s;
+}
+.modal p{
+    background: white;
+    padding: 10px;
+    
+}
+
+.active .modal{
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+}

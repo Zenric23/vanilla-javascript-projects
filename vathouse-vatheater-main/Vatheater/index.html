@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VATHOUSE | Vatheater</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Images/logo.PNG">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <a href="./index.html">
+                    <h1>vt</h1>
+                </a>
+            </div>
+            <div class="light-dark">
+                <div class="light" id="light">
+                    <img src="./Images/light.svg" />
+                    <p>Light</p>
+                </div>
+                <div class="dark" id="dark">
+                    <img src="./Images/dark.svg" />
+                    <p>Dark</p>
+                </div>
+            </div>
+        </nav>
+        <section class="container">
+            <h1>Welcome.</h1>
+            <h3>Millions of movies. Explore now.</h3>
+            <div class="search">
+                <input type="search" placeholder="Search for a movie..." id="search-input" value="it" />
+                <button id="search-btn">Search</button>
+            </div>
+            <p id="error"></p>
+        </section>
+    </header>
+    <div class="direction">
+        <p id="search-key"></p>
+        <p id="pages"></p>
+    </div>
+    <div class="pagination">
+        <p id="pn">#page-number</p>
+        <input type="number" id="pagination" value='1' placeholder="page">
+        <p id="onpage"></p>
+    </div>
+    <section class="more-infos">
+        <div class="more" id="more"></div>
+    </section>
+    <section class="trailer-movie" id="trailer-movie">
+        <div class="video-trailer" id="video-trailer">
+
+        </div>
+        <div class="close" id="close">
+            <img src="./Images/close.svg" />
+        </div>
+    </section>
+    <div id="error-page" class="err">
+
+    </div>
+    <section class="movie" id="movie">
+
+    </section>
+    <footer>
+        <p><i class="fa fa-copyright"></i> 2021 vatheater, made with ♡ by <a href="mailto:pagnavathcoding@gmail.com">
+                Pagnavath</a>. All rights reserved.</p>
+    </footer>
+    <div class="top" id="top">
+        <a href="#header">
+            <img src="./Images/arrow-up.svg" />
+        </a>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

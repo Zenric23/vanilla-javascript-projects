@@ -1,0 +1,121 @@
+::-webkit-scrollbar{
+    width: 5px;
+    
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgb(216, 233, 122);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Klee One", cursive;
+}
+body {
+  max-height: 100vh;
+}
+
+hr {
+  border: 1px solid rgb(216, 233, 122);
+}
+
+h2 {
+  background-color: rgb(216, 233, 122);
+  padding: 1rem;
+  margin-bottom: 15vh;
+  text-align: center;
+}
+.notesLine {
+  margin: 0 50px;
+  padding-top: 50px;
+}
+
+.card {
+  font-size: 1.3rem;
+  margin: 0 auto;
+  width: 50%;
+  box-shadow: 0 0 10px 2px rgb(0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+input {
+  font-size: 1.2rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(216, 233, 122);
+  outline: none;
+  margin: 10px 0;
+}
+.addBtn {
+  padding: 5px 20px;
+
+  cursor: pointer;
+  background: rgb(172, 189, 77);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.addBtn:hover {
+  background: rgb(151, 167, 61);
+}
+.card2 {
+  width: 23.5%;
+  margin: 10px;
+  box-shadow: 0 0 10px 2px rgb(0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+ position: relative;
+ transition:  0.5s;
+ background-color: white;
+ 
+}
+
+.notes {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.tite {
+  border-bottom: 2px solid rgb(172, 189, 77);
+  display: inline-flex;
+  font-weight: bold;
+  
+}
+
+.delNote {
+  margin-top: 10px;
+  
+}
+.desc{
+margin: 10px 0;
+}
+.delNote {
+  background: transparent;
+  color: red;
+  outline: none;
+  border: none;
+  cursor: pointer;
+ position: absolute;
+ right: 10px;
+ top: -10px;
+ font-size: 25px;
+}
+.delNote:hover{
+ color: rgb(201, 22, 22);
+}
+
+

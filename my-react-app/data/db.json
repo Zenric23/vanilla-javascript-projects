@@ -1,0 +1,46 @@
+{
+  "blogs": [
+    {
+      "title": "My first blog",
+      "body": "Tang ina mo jepoy dizon",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "Opening party",
+      "body": "GTA hesoyam workds",
+      "author": "zenric",
+      "id": 2
+    },
+    {
+      "title": "Online class",
+      "body": "Google classroom ctrl + f",
+      "author": "yoshi",
+      "id": 4
+    },
+    {
+      "title": "Back to class",
+      "body": "In new year there are possibility that the traditional face to face classes will continue",
+      "author": "yoshi",
+      "id": 7
+    },
+    {
+      "title": "Beauty and the Beast",
+      "author": "Bradix",
+      "body": "A girl fall in love with the beast.",
+      "id": 9
+    },
+    {
+      "title": "Sad december",
+      "author": "Zenric",
+      "body": "Feeling down because of the scar you made",
+      "id": 13
+    },
+    {
+      "title": "Jane the idiot",
+      "author": "Bradix",
+      "body": "A girl who like to play roblox all the time",
+      "id": 14
+    }
+  ]
+}

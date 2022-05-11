@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background:linear-gradient(to right,black,rgb(56, 55, 55));
+}
+
+nav{
+    background:rgb(36, 11, 11);
+}
+
+.nav-link{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+.nav-link:visited{
+    color: white;
+}
+.nav-link:hover{
+    color: brown;
+    transition: 0.5s;
+   
+}
+
+.nav-item{
+    margin-left: 80px;
+
+}
+
+.navbar-nav{
+    margin-left: 140px;
+}
+
+
+
+.service a{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding-right: 6px;
+}
+
+.service a:hover{
+    color: grey;
+}
+
+.card{
+    background:rgb(36, 11, 11);
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    border-radius:15px;
+   
+}
+
+.card-body:hover{
+    border-radius:15px;
+    cursor: pointer;
+    background:rgb(34, 11, 11);
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+}

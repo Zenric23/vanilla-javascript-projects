@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(0,125,255);
+background: linear-gradient(90deg, rgba(0,125,255,1) 0%, rgba(166,0,255,1) 71%);
+
+}
+
+
+.container{
+    justify-content: center;
+    margin: 0 auto;
+    border: 3px solid rgb(212, 19, 212);
+     padding: 2rem;
+     width: 40%;
+     margin-top: 15vh;
+     border-radius: 1rem;
+     margin-bottom: 2rem;
+}
+
+
+
+.add{
+   width: 80%;
+   padding: 1.3rem;
+   border-radius: 1rem;
+   outline: none;
+   border: none;
+   font-size: 1.4rem;
+   border: 2px solid black;
+}
+.btn{
+    padding: 1rem;
+    color: white;
+    background:rgb(212, 19, 212);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    width: 15%;
+    cursor: pointer;
+}
+.btn:hover{
+    background:rgb(201, 34, 201);
+}
+
+.taskContainer{
+    border: 1px solid red;
+  
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+    padding: 2rem;
+    
+}
+
+.itemCon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.removeBtn i{
+    cursor: pointer;
+   font-size: 2.8rem;
+   color: red;
+   background: none;
+   padding-right: 1.7rem;
+}
+
+.item{
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 80%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.inputContainer{
+    padding:2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 18px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 10px 18px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 18px 1px rgba(0,0,0,0.75);
+}
+
+.line{
+   text-decoration: line-through;
+  
+}
+
+.itemCon{
+    padding-bottom: 10px;
+}
+
+
+.newElement{
+    color: black;
+    font-size: 5rem;
+    text-transform: uppercase;
+}

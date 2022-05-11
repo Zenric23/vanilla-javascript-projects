@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    
+}
+
+.gradient{
+    background: rgb(0,125,255);
+background: linear-gradient(90deg, rgba(0,125,255,1) 0%, rgba(166,0,255,1) 100%);
+}
+.myBrand{
+    font-weight: 600;
+    cursor: auto;
+    font-family: 'Andada Pro', serif;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    color: black !important;
+}
+.nav-link:hover{
+    color: red !important;
+}
+
+.page-header{
+    margin-top: 3.5rem;
+    font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.feature{
+    font-family: 'Montserrat', sans-serif;
+}
+.feature ul{
+    list-style: none;
+}
+
+.feature ul li i{
+    padding-right: 1rem;
+}
+.icons .icon{
+   border-radius: 10rem;
+    font-size: 1.75rem;
+    color: white;
+   
+}
+.icons{
+    margin-top: 2.5rem;
+}
+
+.icons h3,.icons p{
+    color:rgb(107, 105, 105);
+}
+.gallery{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.gallery img{
+
+    border-radius: 1.7rem;
+    height:450px;
+    width: 100%;
+}
+.footer .icon i{
+    font-size: 2.7rem;
+    padding-right: 1rem;
+}
+
+.footer .icon:hover{
+color: rgb(65, 152, 252);
+cursor: pointer;
+transition: 0.4s;
+}
+
+.footer .links{
+    display: inline-flex;
+    margin-left: 1.3rem;
+    margin-top: 10px;
+    
+}
+
+.footer{
+    margin-top: 2rem;
+}
+
+.gallery{
+    margin-top: 16vh;
+}
+
+ .servieImg{
+
+    width: 400px;
+    height: auto;
+}
+
+.page-header{
+    padding-top: 2.5rem;
+}

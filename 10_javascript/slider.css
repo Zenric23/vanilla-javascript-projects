@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+position: absolute;
+width: 100%;
+height: 68px;
+top: 0;
+z-index: 2;
+
+}
+#logo{
+    display: inline-block;
+    line-height: 60px;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+   color: rgb(28, 47, 209);
+}
+
+.sign{
+    float: right;
+    line-height: 60px;
+    margin-right: 10px;
+}
+.sign a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.act{
+    border-radius: 50px;
+    border:2px solid white;
+    padding: 5px 13px;
+}
+.sign a:hover{
+    color: skyblue;
+    border-color:skyblue ;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    background: #2c3e50;
+    height: 100vh;
+    overflow: hidden;
+}
+.myslider{
+    height: auto;
+    display: none;
+    overflow: hidden;
+}
+.prev,.next{
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    user-select: none;
+    text-decoration: none;
+    transition: 0.4s;
+    margin: 0 10px;
+}
+.prev:hover,.next:hover{
+
+    color: skyblue;
+}
+.next{
+    right: 0;
+}
+.dotsbox{
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    bottom:25px; 
+ 
+}
+.dot{
+   display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.active, .dot:hover{
+    border-color:rgb(28, 47, 209);
+    transition: 0.2s;
+}
+.fade{
+    animation: fade 1.5s;
+}
+
+@keyframes fade{
+    from{opacity: 0.5;}
+    to{opacity: 1;}
+}
+.txt{
+color: white;
+position: absolute;
+letter-spacing: 2px;
+line-height: 35px;
+top:40%;
+left: 15%;
+font-size: 1.3rem;
+animation: posi 2s;
+z-index: 1;
+}
+
+@keyframes posi{
+    from{left: 25%;}
+    to{left:15%;}
+}
+.txt h1{
+   color: rgb(28, 47, 209);
+   font-weight: bold;
+}
+.txt p{
+    font-weight: bold;
+}
+img{
+    transform: scale(1.5,1.5);
+    animation:zoom 20s;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+@keyframes zoom{
+from{transform: scale(1.5,1.5);}
+to{transform: scale(1,1);}
+}
+
+@media screen and (max-width:1000px){
+  
+   
+    .txt{
+        font-size: 1rem;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        animation: posi2 2s;
+    }
+    @keyframes posi2{
+      from{top: 35%;}
+      to{top:50%;}
+    }
+}
+
+@media screen and (max-width:440px){
+
+   .dot{
+       margin: 0 1.5px;
+   }
+}

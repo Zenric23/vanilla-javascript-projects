@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    background: rgb(12, 12, 107);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-size: 60px;
+}
+
+input{
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: 500;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    text-transform: capitalize;
+}
+
+button{
+    padding: 1rem;
+    border-radius:10px;
+    color: white;
+    font-size: 1rem;
+    background-color: rgb(219, 12, 12);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.box{
+    padding:1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    flex-basis: 22.9%;
+    margin: 1rem;
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+img{
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+
+.tempCon{
+    font-size: 4rem;
+    color: black;
+    position: relative;
+    font-weight: bold;
+}
+
+.temp, .cel{
+    font-size: 5rem;
+}
+
+
+.desc{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(59, 58, 58);
+    font-weight: bold;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.cityCon{
+    color: rgb(65, 63, 63);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.city{
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.badge{
+    background-color: rgb(243, 126, 42);
+    padding: 3px 8px;
+    font-size: 1rem;
+    position: absolute;
+    border-radius: 10px;
+    margin-left: 8px;
+    color: white;
+    font-weight: bold;      
+}
+
+.error{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 900px) {
+    h1{
+        display: block;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   button{
+       width: 80%;
+   }
+   input{
+       width: 100%;
+       text-align: center;
+       margin-bottom: 1.5rem;
+   }
+   .temp{
+       font-size: 4rem;
+   }
+   .cel{
+       font-size: 2.5rem;
+   }
+   .city{
+   font-size: 1.8rem;
+   }
+   .badge{
+   font-size: 15px;
+   }
+   .desc{
+       font-size: 1.4rem;
+   }
+}
+
+@media screen and (max-width: 420px) {
+h1{
+    display: none;
+}
+
+button{
+    width: 95%;
+    margin-right: 15px;
+}
+input{
+    width: 95%;
+}
+
+.temp{
+    font-size: 3.5rem;
+}
+.cel{
+    font-size: 2rem;
+}
+.city{
+font-size: 1.5rem;
+}
+.badge{
+font-size: 12px;
+}
+.desc{
+    font-size: 1rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+

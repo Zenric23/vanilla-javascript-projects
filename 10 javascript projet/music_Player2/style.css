@@ -1,0 +1,272 @@
+
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background .4s ease-in-out;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.fa-bars{
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 10px;
+    font-size: 1.6rem;
+    cursor: pointer; 
+}
+
+#title{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin:0;
+    margin-bottom: 2rem;
+}
+
+.music-container{
+    background: transparent;
+    padding: 1.4rem;
+    border-radius: 10px;
+   text-align: center;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+   position: relative;
+   overflow: hidden;
+}
+
+.progress-container{
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.07);
+}
+
+.progress{
+    width: 0%;
+    background-color: rgb(10, 109, 175);
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+.nav-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.nav-buttons button{
+    margin: 0 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow:  0 0 10px rgba(0,0,0,0.6);
+    animation: rotate 3s linear  infinite;
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.music-list{
+    position: absolute;
+    height: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    height: 0px;
+    background: rgba(0,0,0,0.2);
+    transition: height 0.3s ease-in-out;
+}
+
+.musicListName,
+.musicListArtist {
+    text-transform: capitalize;
+}
+
+.music-container.active .music-list{
+    height: 300px;
+}
+
+.musicCon {
+   height: 100px;
+   margin: 0;
+   display: flex;
+   padding: 10px;
+   border-bottom: 1px solid black;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   transition: background 0.3s ease-in-out;
+}
+
+.musicCon:last-child{
+    border: none;
+}
+
+.musicCon:nth-child(1), 
+.controlList{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.musicCon p{
+    font-weight: bold;
+}
+
+.musicCon .imageCon{
+    width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.musicCon .imageCon p{
+    font-weight: normal;
+    margin-left: 6px;
+}
+
+.musicCon  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.volume-container{
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volume-parent{
+width: 40%;
+background-color: rgba(0,0,0,0.2);
+height: 4px;
+cursor: pointer;
+}
+
+.volume{
+height: inherit;
+width: 100%;
+background-color: rgba(0,0,0,0.7);
+}
+
+.fa-volume-up,
+.fa-volume-down{
+    margin: 0 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.add-song{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 7px 15px;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
+.add-song h3{
+    margin: 0;
+    font-weight: bold;
+}
+
+form{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: opacity .6s;
+    visibility: hidden;
+}
+
+form.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+form .music-info{
+    background: white;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10%;
+}
+
+form.active .music-info{
+transition: 0.2s ease-in-out;
+top: 50%;
+transform: translateY(-50%);
+}
+
+form .music-info input{
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+form .music-info .btnCon{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btnCon button{
+    padding: 7px 14px;
+    font-size: 1.3rem;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
